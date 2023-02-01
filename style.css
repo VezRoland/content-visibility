@@ -1,0 +1,61 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500&display=swap");
+
+* {
+    margin: 0;
+}
+
+main {
+    width: min(1200px, 90vw);
+    margin: auto;
+    box-sizing: border-box;
+    background: peachpuff;
+}
+
+header {
+    background: peachpuff;
+}
+
+section {
+    content-visibility: auto;
+    contain-intrinsic-size: 580px;
+    background: seashell;
+}
+
+section:nth-child(even) {
+    border-block: 2px solid salmon;
+}
+
+header, section {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding-inline: min(50px, 10vw);
+}
+
+img {
+    width: max-content;
+    flex: 1;
+    border-radius: 20px;
+}
+
+h1 {
+    flex: 1;
+    font-family: "Open Sans", sans-serif;
+    font-size: 2rem;
+}
+
+span {
+    padding-inline: 10px;
+    padding-block: 5px;
+    border-radius: 5px;
+    font-family: monospace;
+    background: lightsalmon;
+}
+
+p {
+    flex: 1;
+    font-family: "Open Sans", sans-serif;
+    font-size: 1rem;
+}
